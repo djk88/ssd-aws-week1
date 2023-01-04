@@ -13,6 +13,9 @@ const pokemons = [
     }
 ]
 
+app.get('/', (req, res) => {
+})
+
 app.get("/api/pokemons", (req, res) => {
     console.log("GET /api/pokemons")
     res.send({ pokemons: pokemons })
