@@ -4,6 +4,7 @@ const app = express();
 // Before the other routes
 app.use(express.static("build"))
 
+app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
 
 const pokemons = [
